@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build-x64:
     docker:
-      - image: cimg/ruby:2.4-node
+      - image: cimg/node:18.10.0
     steps:
       - checkout
       - run:
@@ -16,7 +16,7 @@ jobs:
             echo "Done..."
   build-x86:
     docker:
-      - image: cimg/ruby:2.5-node
+      - image: cimg/node:18.10.0
     steps:
       - checkout
       - run:
@@ -29,7 +29,7 @@ jobs:
             echo "Done..."
   build-arm:
     docker:
-      - image: cimg/ruby:2.6-node
+      - image: cimg/node:18.10.0
     steps:
       - checkout
       - run:
@@ -42,7 +42,7 @@ jobs:
             echo "Done..."
   build-arm64:
     docker:
-      - image: cimg/ruby:2.7-node
+      - image: cimg/node:18.10.0
     steps:
       - checkout
       - run:
